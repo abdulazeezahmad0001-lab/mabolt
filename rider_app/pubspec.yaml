@@ -1,0 +1,47 @@
+name: rider_app
+description: Mabolt - Your Ride, Your Way
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # UI & Styling
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.9
+  flutter_animate: ^4.5.0
+  
+  # State Management
+  flutter_riverpod: ^2.4.9
+  
+  # Networking
+  dio: ^5.4.0
+  
+  # Navigation
+  go_router: ^13.0.0
+  
+  # Storage
+  flutter_secure_storage: ^9.0.0
+  
+  # Phone Input (This works)
+  intl_phone_number_input: ^0.7.3
+  
+  # Utilities
+  equatable: ^2.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/fonts/
