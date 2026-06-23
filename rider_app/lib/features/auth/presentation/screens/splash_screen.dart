@@ -20,6 +20,14 @@ class _SplashScreenState extends State<SplashScreen>
 
   static const _amber = Color(0xFFF59E0B);
   static const _amberDark = Color(0xFFD97706);
+<<<<<<< HEAD
+=======
+  // Deep navy derived from the brand blue, used as the splash backdrop.
+  // Kept separate from AppColors.primary (which is a vivid blue) because
+  // a saturated blue at full-bleed fights with the photo and the amber
+  // accents. Swap this for AppColors.primaryDark directly if you'd
+  // rather have a punchier, bluer background.
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
   static const _navy = Color(0xFF0B1A33);
 
   @override
@@ -56,27 +64,43 @@ class _SplashScreenState extends State<SplashScreen>
       body: Stack(
         fit: StackFit.expand,
         children: [
+<<<<<<< HEAD
           // Full-bleed background image, edge to edge
           const FallbackImage(assetPath: 'assets/images/splash_bg.jpg'),
 
           // Low-opacity tint — the photo stays visible, this just keeps
           // white text readable on top of it. Tune the 0.15-0.55 numbers
           // up if your actual photo is busier/brighter than this looks.
+=======
+          // Background image — falls back to a gradient if the asset is missing
+          const FallbackImage(assetPath: 'assets/images/splash_bg.jpg'),
+
+          // Brand-tinted scrim instead of a flat black overlay
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
           DecoratedBox(
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
                 colors: [
+<<<<<<< HEAD
                   _navy.withOpacity(0.15),
                   _navy.withOpacity(0.35),
                   _navy.withOpacity(0.55),
                 ],
                 stops: const [0.0, 0.5, 1.0],
+=======
+                  _navy.withOpacity(0.35),
+                  _navy.withOpacity(0.55),
+                  _navy.withOpacity(0.92),
+                ],
+                stops: const [0.0, 0.45, 1.0],
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
               ),
             ),
           ),
 
+<<<<<<< HEAD
           // Logo — centered near the top. Drop your asset at
           // assets/images/logo.png; falls back to a translucent box
           // with a bolt icon until it's there.
@@ -110,11 +134,64 @@ class _SplashScreenState extends State<SplashScreen>
               ),
 
           // Main lockup — wordmark + tagline, centered
+=======
+          // Soft amber glow behind the logo, for depth
+          Positioned(
+            top: size.height * 0.30,
+            left: size.width * 0.5 - 90,
+            child: Container(
+              width: 180,
+              height: 180,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                gradient: RadialGradient(
+                  colors: [_amber.withOpacity(0.35), _amber.withOpacity(0.0)],
+                ),
+              ),
+            ),
+          ),
+
+          // Main lockup — shifted to the lower-middle third, not dead center
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
           Align(
             alignment: const Alignment(0, 0.05),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
+<<<<<<< HEAD
+=======
+                Container(
+                  padding: const EdgeInsets.all(22),
+                  decoration: BoxDecoration(
+                    gradient: const LinearGradient(
+                      colors: [_amber, _amberDark],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                    borderRadius: BorderRadius.circular(22),
+                    boxShadow: [
+                      BoxShadow(
+                        color: _amber.withOpacity(0.45),
+                        blurRadius: 30,
+                        spreadRadius: 2,
+                        offset: const Offset(0, 10),
+                      ),
+                    ],
+                  ),
+                  child: const Icon(Icons.bolt_rounded,
+                      color: Colors.white, size: 46),
+                )
+                    .animate()
+                    .scale(
+                      duration: 600.ms,
+                      curve: Curves.easeOutBack,
+                      begin: const Offset(0.6, 0.6),
+                    )
+                    .fadeIn(duration: 400.ms),
+
+                const SizedBox(height: 22),
+
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
                 RichText(
                   text: const TextSpan(
                     style: TextStyle(
@@ -150,7 +227,11 @@ class _SplashScreenState extends State<SplashScreen>
                   'Your ride, your way',
                   style: TextStyle(
                     fontSize: 15,
+<<<<<<< HEAD
                     color: Colors.white.withOpacity(0.85),
+=======
+                    color: Colors.white.withOpacity(0.75),
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
                     fontWeight: FontWeight.w300,
                     letterSpacing: 2,
                   ),
@@ -159,7 +240,11 @@ class _SplashScreenState extends State<SplashScreen>
             ),
           ),
 
+<<<<<<< HEAD
           // Signature route-line motif
+=======
+          // Signature route-line motif, just above the loading bar
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
           Positioned(
             left: 40,
             right: 40,
@@ -171,7 +256,11 @@ class _SplashScreenState extends State<SplashScreen>
                 builder: (context, _) => CustomPaint(
                   painter: RoutePathPainter(
                     progress: _controller.value,
+<<<<<<< HEAD
                     lineColor: Colors.white.withOpacity(0.4),
+=======
+                    lineColor: Colors.white.withOpacity(0.35),
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
                     pinColor: _amber,
                   ),
                 ),
@@ -179,7 +268,11 @@ class _SplashScreenState extends State<SplashScreen>
             ),
           ).animate().fadeIn(delay: 700.ms, duration: 500.ms),
 
+<<<<<<< HEAD
           // Looping progress bar
+=======
+          // Loading bar — now actually animated, sweeping left to right on a loop
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
           Positioned(
             bottom: 56,
             left: 0,
@@ -191,7 +284,11 @@ class _SplashScreenState extends State<SplashScreen>
                   child: Container(
                     width: 120,
                     height: 3,
+<<<<<<< HEAD
                     color: Colors.white.withOpacity(0.2),
+=======
+                    color: Colors.white.withOpacity(0.15),
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
                     child: AnimatedBuilder(
                       animation: _controller,
                       builder: (context, _) => Align(
@@ -213,7 +310,11 @@ class _SplashScreenState extends State<SplashScreen>
                 Text(
                   'Version 1.0.0',
                   style:
+<<<<<<< HEAD
                       TextStyle(color: Colors.white.withOpacity(0.5), fontSize: 12),
+=======
+                      TextStyle(color: Colors.white.withOpacity(0.4), fontSize: 12),
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
                 ),
               ],
             ),

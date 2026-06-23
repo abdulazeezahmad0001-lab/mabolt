@@ -25,9 +25,18 @@ dependencies:
   # Navigation
   go_router: ^13.0.0
   
+<<<<<<< HEAD
   # Storage - Updated to version that works with web
   flutter_secure_storage: ^9.0.0
   
+=======
+  # Storage
+  flutter_secure_storage: ^9.0.0
+  
+  # Phone Input (This works)
+  intl_phone_number_input: ^0.7.3
+  
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
   # Utilities
   equatable: ^2.0.5
 
@@ -40,4 +49,9 @@ flutter:
   uses-material-design: true
 
   assets:
+<<<<<<< HEAD
     - assets/images/
+=======
+    - assets/images/
+    - assets/fonts/
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441

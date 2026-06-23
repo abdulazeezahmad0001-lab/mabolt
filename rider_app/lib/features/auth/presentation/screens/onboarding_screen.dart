@@ -129,6 +129,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     ),
                   ),
                 ),
+<<<<<<< HEAD
                 Row(
                   children: [
                     if (_currentPage > 0) ...[
@@ -178,6 +179,31 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       ),
                     ),
                   ],
+=======
+                GestureDetector(
+                  onTap: _isLastPage ? _goToRegister : _nextPage,
+                  child: Container(
+                    width: 54,
+                    height: 54,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      gradient: const LinearGradient(colors: [_amber, _amberDark]),
+                      boxShadow: [
+                        BoxShadow(
+                          color: _amber.withOpacity(0.4),
+                          blurRadius: 16,
+                          offset: const Offset(0, 6),
+                        ),
+                      ],
+                    ),
+                    child: Icon(
+                      _isLastPage
+                          ? Icons.check_rounded
+                          : Icons.arrow_forward_rounded,
+                      color: Colors.white,
+                    ),
+                  ),
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
                 ),
               ],
             ),
@@ -287,6 +313,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     );
   }
 
+<<<<<<< HEAD
   void _previousPage() {
     _pageController.previousPage(
       duration: const Duration(milliseconds: 400),
@@ -294,6 +321,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     );
   }
 
+=======
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
   void _goToRegister() {
     if (mounted) {
       Navigator.pushReplacement(

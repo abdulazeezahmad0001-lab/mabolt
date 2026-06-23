@@ -81,6 +81,17 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.2"
+<<<<<<< HEAD
+=======
+  dlibphonenumber:
+    dependency: transitive
+    description:
+      name: dlibphonenumber
+      sha256: "79d62aeb105f5cd4f0a5b9a030fcd22961e31ef70bc7008f3dcc09ec1ccbdf3f"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.66"
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
   equatable:
     dependency: "direct main"
     description:
@@ -105,6 +116,17 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.2.0"
+<<<<<<< HEAD
+=======
+  fixnum:
+    dependency: transitive
+    description:
+      name: fixnum
+      sha256: b6dc7065e46c974bc7c5f143080a6764ec7a4be6da1285ececdc37be96de53be
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.1"
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
   flutter:
     dependency: "direct main"
     description: flutter
@@ -261,6 +283,17 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.20.2"
+<<<<<<< HEAD
+=======
+  intl_phone_number_input:
+    dependency: "direct main"
+    description:
+      name: intl_phone_number_input
+      sha256: "9d4d7f174cfc3a85b238e0b465ec0e7232fc0815a779e5a58fbf118dee26dfa0"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.7.5"
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
   jni:
     dependency: transitive
     description:
@@ -345,10 +378,17 @@ packages:
     dependency: transitive
     description:
       name: meta
+<<<<<<< HEAD
       sha256: "1741988757a65eb6b36abe716829688cf01910bbf91c34354ff7ec1c3de2b349"
       url: "https://pub.dev"
     source: hosted
     version: "1.18.0"
+=======
+      sha256: "23f08335362185a5ea2ad3a4e597f1375e78bce8a040df5c600c8d3552ef2394"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.17.0"
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
   mime:
     dependency: transitive
     description:
@@ -461,6 +501,17 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.8"
+<<<<<<< HEAD
+=======
+  protobuf:
+    dependency: transitive
+    description:
+      name: protobuf
+      sha256: "75ec242d22e950bdcc79ee38dd520ce4ee0bc491d7fadc4ea47694604d22bf06"
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.0.0"
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
   pub_semver:
     dependency: transitive
     description:
@@ -542,10 +593,17 @@ packages:
     dependency: transitive
     description:
       name: test_api
+<<<<<<< HEAD
       sha256: "949a932224383300f01be9221c39180316445ecb8e7547f70a41a35bf421fb9e"
       url: "https://pub.dev"
     source: hosted
     version: "0.7.11"
+=======
+      sha256: "8161c84903fd860b26bfdefb7963b3f0b68fee7adea0f59ef805ecca346f0c7a"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.7.10"
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
   typed_data:
     dependency: transitive
     description:
