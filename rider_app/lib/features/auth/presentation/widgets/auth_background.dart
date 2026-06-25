@@ -22,7 +22,11 @@ class AuthBackground extends StatelessWidget {
           image: AssetImage(imagePath),
           fit: BoxFit.cover,
           colorFilter: ColorFilter.mode(
+<<<<<<< HEAD
             Colors.black.withValues(alpha: overlayOpacity),
+=======
+            Colors.black.withOpacity(overlayOpacity),
+>>>>>>> 858f468a4725940b8a5dad9c9ae2b3a432491c16
             BlendMode.darken,
           ),
         ),
@@ -35,7 +39,11 @@ class AuthBackground extends StatelessWidget {
             colors: [
               AppColors.primary.withOpacity(0.3),
               AppColors.amber.withOpacity(0.1),
+<<<<<<< HEAD
               Colors.black.withValues(alpha: 0.6),
+=======
+              Colors.black.withOpacity(0.6),
+>>>>>>> 858f468a4725940b8a5dad9c9ae2b3a432491c16
             ],
             stops: const [0.0, 0.4, 1.0],
           ),

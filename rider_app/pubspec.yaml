@@ -11,6 +11,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
 
+<<<<<<< HEAD
   google_fonts: ^6.1.0
   flutter_svg: ^2.0.9
   flutter_animate: ^4.5.0
@@ -18,6 +19,35 @@ dependencies:
   dio: ^5.4.0
   go_router: ^13.0.0
   flutter_secure_storage: ^9.0.0
+=======
+  # UI & Styling
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.9
+  flutter_animate: ^4.5.0
+  
+  # State Management
+  flutter_riverpod: ^2.4.9
+  
+  # Networking
+  dio: ^5.4.0
+  
+  # Navigation
+  go_router: ^13.0.0
+  
+<<<<<<< HEAD
+  # Storage - Updated to version that works with web
+  flutter_secure_storage: ^9.0.0
+  
+=======
+  # Storage
+  flutter_secure_storage: ^9.0.0
+  
+  # Phone Input (This works)
+  intl_phone_number_input: ^0.7.3
+  
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
+  # Utilities
+>>>>>>> 858f468a4725940b8a5dad9c9ae2b3a432491c16
   equatable: ^2.0.5
 
 dev_dependencies:
@@ -29,4 +59,13 @@ flutter:
   uses-material-design: true
 
   assets:
+<<<<<<< HEAD
     - assets/images/
+=======
+<<<<<<< HEAD
+    - assets/images/
+=======
+    - assets/images/
+    - assets/fonts/
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
+>>>>>>> 858f468a4725940b8a5dad9c9ae2b3a432491c16

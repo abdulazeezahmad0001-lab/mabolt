@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+// rider_app/lib/main.dart
+>>>>>>> 858f468a4725940b8a5dad9c9ae2b3a432491c16
 import 'package:flutter/material.dart';
 import 'features/auth/presentation/screens/splash_screen.dart';
 
@@ -21,4 +25,8 @@ class MyApp extends StatelessWidget {
       home: const SplashScreen(),
     );
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 858f468a4725940b8a5dad9c9ae2b3a432491c16

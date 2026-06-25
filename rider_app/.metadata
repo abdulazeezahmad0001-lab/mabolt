@@ -4,7 +4,15 @@
 # This file should be version controlled and should not be manually edited.
 
 version:
+<<<<<<< HEAD
   revision: "e1fd963c6f6922bd32afde2e9698a363cd0406d2"
+=======
+<<<<<<< HEAD
+  revision: "559ffa3f75e7402d65a8def9c28389a9b2e6fe42"
+=======
+  revision: "db50e20168db8fee486b9abf32fc912de3bc5b6a"
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
+>>>>>>> 858f468a4725940b8a5dad9c9ae2b3a432491c16
   channel: "stable"
 
 project_type: app
@@ -13,6 +21,7 @@ project_type: app
 migration:
   platforms:
     - platform: root
+<<<<<<< HEAD
       create_revision: e1fd963c6f6922bd32afde2e9698a363cd0406d2
       base_revision: e1fd963c6f6922bd32afde2e9698a363cd0406d2
     - platform: android
@@ -33,6 +42,51 @@ migration:
     - platform: windows
       create_revision: e1fd963c6f6922bd32afde2e9698a363cd0406d2
       base_revision: e1fd963c6f6922bd32afde2e9698a363cd0406d2
+=======
+<<<<<<< HEAD
+      create_revision: 559ffa3f75e7402d65a8def9c28389a9b2e6fe42
+      base_revision: 559ffa3f75e7402d65a8def9c28389a9b2e6fe42
+    - platform: android
+      create_revision: 559ffa3f75e7402d65a8def9c28389a9b2e6fe42
+      base_revision: 559ffa3f75e7402d65a8def9c28389a9b2e6fe42
+    - platform: ios
+      create_revision: 559ffa3f75e7402d65a8def9c28389a9b2e6fe42
+      base_revision: 559ffa3f75e7402d65a8def9c28389a9b2e6fe42
+    - platform: linux
+      create_revision: 559ffa3f75e7402d65a8def9c28389a9b2e6fe42
+      base_revision: 559ffa3f75e7402d65a8def9c28389a9b2e6fe42
+    - platform: macos
+      create_revision: 559ffa3f75e7402d65a8def9c28389a9b2e6fe42
+      base_revision: 559ffa3f75e7402d65a8def9c28389a9b2e6fe42
+    - platform: web
+      create_revision: 559ffa3f75e7402d65a8def9c28389a9b2e6fe42
+      base_revision: 559ffa3f75e7402d65a8def9c28389a9b2e6fe42
+    - platform: windows
+      create_revision: 559ffa3f75e7402d65a8def9c28389a9b2e6fe42
+      base_revision: 559ffa3f75e7402d65a8def9c28389a9b2e6fe42
+=======
+      create_revision: db50e20168db8fee486b9abf32fc912de3bc5b6a
+      base_revision: db50e20168db8fee486b9abf32fc912de3bc5b6a
+    - platform: android
+      create_revision: db50e20168db8fee486b9abf32fc912de3bc5b6a
+      base_revision: db50e20168db8fee486b9abf32fc912de3bc5b6a
+    - platform: ios
+      create_revision: db50e20168db8fee486b9abf32fc912de3bc5b6a
+      base_revision: db50e20168db8fee486b9abf32fc912de3bc5b6a
+    - platform: linux
+      create_revision: db50e20168db8fee486b9abf32fc912de3bc5b6a
+      base_revision: db50e20168db8fee486b9abf32fc912de3bc5b6a
+    - platform: macos
+      create_revision: db50e20168db8fee486b9abf32fc912de3bc5b6a
+      base_revision: db50e20168db8fee486b9abf32fc912de3bc5b6a
+    - platform: web
+      create_revision: db50e20168db8fee486b9abf32fc912de3bc5b6a
+      base_revision: db50e20168db8fee486b9abf32fc912de3bc5b6a
+    - platform: windows
+      create_revision: db50e20168db8fee486b9abf32fc912de3bc5b6a
+      base_revision: db50e20168db8fee486b9abf32fc912de3bc5b6a
+>>>>>>> d93c2721c193dc5d98f04dd5b6ac02b793cd4441
+>>>>>>> 858f468a4725940b8a5dad9c9ae2b3a432491c16
 
   # User provided section
 

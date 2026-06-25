@@ -47,7 +47,11 @@ class _AuthTextFieldState extends State<AuthTextField> {
         const SizedBox(height: 8),
         Container(
           decoration: BoxDecoration(
+<<<<<<< HEAD
             color: Colors.white.withValues(alpha: 0.08),
+=======
+            color: Colors.white.withOpacity(0.08),
+>>>>>>> 858f468a4725940b8a5dad9c9ae2b3a432491c16
             borderRadius: BorderRadius.circular(16),
             border: Border.all(
               color: AppColors.primary.withOpacity(0.3),
